@@ -1,0 +1,12 @@
+C:\Users\bobo\Documents\LogicModule\bin\Debug\net6.0\PathfindingModule.deps.json
+C:\Users\bobo\Documents\LogicModule\bin\Debug\net6.0\PathfindingModule.dll
+C:\Users\bobo\Documents\LogicModule\bin\Debug\net6.0\PathfindingModule.pdb
+C:\Users\bobo\Documents\LogicModule\obj\Debug\net6.0\PathfindingModule.csproj.AssemblyReference.cache
+C:\Users\bobo\Documents\LogicModule\obj\Debug\net6.0\PathfindingModule.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bobo\Documents\LogicModule\obj\Debug\net6.0\PathfindingModule.AssemblyInfoInputs.cache
+C:\Users\bobo\Documents\LogicModule\obj\Debug\net6.0\PathfindingModule.AssemblyInfo.cs
+C:\Users\bobo\Documents\LogicModule\obj\Debug\net6.0\PathfindingModule.csproj.CoreCompileInputs.cache
+C:\Users\bobo\Documents\LogicModule\obj\Debug\net6.0\PathfindingModule.dll
+C:\Users\bobo\Documents\LogicModule\obj\Debug\net6.0\refint\PathfindingModule.dll
+C:\Users\bobo\Documents\LogicModule\obj\Debug\net6.0\PathfindingModule.pdb
+C:\Users\bobo\Documents\LogicModule\obj\Debug\net6.0\ref\PathfindingModule.dll

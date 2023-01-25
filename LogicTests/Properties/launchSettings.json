@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "LogicTests": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
