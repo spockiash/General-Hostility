@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "General Hostility": {
+      "commandName": "Project"
+    },
+    "Debug Game": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Godot_v4.0-beta11_mono_win64\\Godot_v4.0-beta11_mono_win64.exe",
+      "commandLineArgs": "--path --verbose",
+      "nativeDebugging": true
+    }
+  }
+}
