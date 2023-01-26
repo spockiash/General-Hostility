@@ -1,17 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://b3rt7ub07146l"]
+[gd_scene load_steps=3 format=3 uid="uid://djqax775sffle"]
 
 [ext_resource type="Texture2D" uid="uid://d1gf0yl5wc7v" path="res://Art/Robot/robot.png" id="1_n6q8d"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p6gws"]
-height = 44.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mg0iu"]
+radius = 36.0
+height = 146.0
 
-[node name="Robot" type="RigidBody2D"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-rotation = 1.5708
-shape = SubResource("CapsuleShape2D_p6gws")
+[node name="Robot" type="CharacterBody2D"]
+position = Vector2(0, -35)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, -10)
-scale = Vector2(0.3, 0.3)
 texture = ExtResource("1_n6q8d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 39)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_mg0iu")

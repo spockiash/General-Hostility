@@ -1,42 +1,39 @@
 using Godot;
 using System;
-using PathfindingModule;
-public partial class Robot : RigidBody2D
+
+public partial class Robot : CharacterBody2D
 {
-	[Export]
-	public int move_speed = 110;
+	public const float Speed = 300.0f;
+	public const float JumpVelocity = -400.0f;
 
-	private int _unitSize = 16;
-    private Vector2i MapSize = new Vector2i(32, 32);
+	// Get the gravity from the project settings to be synced with RigidBody nodes.
+	public float gravity = ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
 
-    public NodePath AstarTilesPath { get; set; }
-	public NodePath PlayerPath { get; set; }
-    public Player Player { get; private set; }
-
-    // Called when the node enters the scene tree for the first time.
-    public override void _Ready()
+	public override void _PhysicsProcess(double delta)
 	{
-		AstarTilesPath = new NodePath("TileMap/AstarTileMap");
-		PlayerPath = new NodePath("Player");
-		Player = (Player)this.GetParent().GetNode(PlayerPath);
-        Tiles = (TileMap)this.GetNode(AstarTilesPath);
-        AStar = AStarSetup.CreateInstance(32,32,_unitSize);
-		GetNewAstarPath();
-	}
+		Vector2 velocity = Velocity;
 
-    public AStarSetup AStar { get; set; }
+		// Add the gravity.
+		if (!IsOnFloor())
+			velocity.y += gravity * (float)delta;
 
-    public TileMap Tiles { get; set; }
+		// Handle Jump.
+		if (Input.IsActionJustPressed("ui_accept") && IsOnFloor())
+			velocity.y = JumpVelocity;
 
-    // Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
-	{
-	}
+		// Get the input direction and handle the movement/deceleration.
+		// As good practice, you should replace UI actions with custom gameplay actions.
+		Vector2 direction = Input.GetVector("ui_left", "ui_right", "ui_up", "ui_down");
+		if (direction != Vector2.Zero)
+		{
+			velocity.x = direction.x * Speed;
+		}
+		else
+		{
+			velocity.x = Mathf.MoveToward(Velocity.x, 0, Speed);
+		}
 
-	public void GetNewAstarPath()
-	{
-		var node = (AstarTileMap)this.GetParent().GetNode(AstarTilesPath);
-		var nodes = node.GetAstarPath(this.GlobalPosition, Player.GlobalPosition);
-		var x = 1;
+		Velocity = velocity;
+		MoveAndSlide();
 	}
 }
