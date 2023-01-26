@@ -6,3 +6,14 @@
 /.vs/GENERAL HOSTILITY/v17/.suo
 /.vs/GENERAL HOSTILITY/FileContentIndex/02b0548b-4afc-45ec-91c0-c17a1f14ae6b.vsidx
 *.vsidx
+/.vs/GENERAL HOSTILITY/FileContentIndex/d6dd7001-cd39-4e4b-951f-86301c74327c.vsidx
+/LogicModule/obj/Debug/net6.0/PathfindingModule.assets.cache
+/LogicModule/obj/Debug/net6.0/PathfindingModule.dll
+/LogicModule/obj/Debug/net6.0/PathfindingModule.GeneratedMSBuildEditorConfig.editorconfig
+/LogicModule/obj/Debug/net6.0/PathfindingModule.csproj.FileListAbsolute.txt
+/LogicModule/obj/Debug/net6.0/PathfindingModule.pdb
+/LogicModule/obj/PathfindingModule.csproj.nuget.dgspec.json
+/LogicModule/obj/project.assets.json
+/LogicModule/obj/project.nuget.cache
+/LogicModule/bin/Debug/net6.0/PathfindingModule.pdb
+/LogicModule/bin/Debug/net6.0/PathfindingModule.dll
