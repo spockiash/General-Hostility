@@ -1,3 +1,5 @@
 # Godot 4+ specific ignores
 .godot/
 /.vs/GENERAL HOSTILITY/DesignTimeBuild/.dtbcache.v2
+/.vs/GENERAL HOSTILITY/FileContentIndex/2a7af3d6-d336-418c-97a5-0ff1f8a69ae2.vsidx
+/.vs/GENERAL HOSTILITY/FileContentIndex/c2fd105e-3a98-4614-a5a3-d84e4df865df.vsidx
