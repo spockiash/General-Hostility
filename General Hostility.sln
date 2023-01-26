@@ -5,13 +5,9 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "General Hostility", "General Hostility.csproj", "{E203EE37-768B-4BD7-BDCC-5D669BD1412A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{A662E361-2300-4973-9180-B66913A1C494}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicTests", "..\LogicTests\LogicTests.csproj", "{2DC58863-18C6-41FD-9472-0B8C52F68CC5}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{9E88B55D-6E73-4555-A821-789B8778FDA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathfindingModule", "..\LogicModule\PathfindingModule.csproj", "{EEC5AD17-B49A-43DA-AB97-5AE74C87274D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PathfindingModule", "LogicModule\PathfindingModule.csproj", "{6F2959BB-0B8C-4818-8D63-795EBE95259D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,29 +25,20 @@ Global
 		{E203EE37-768B-4BD7-BDCC-5D669BD1412A}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
 		{E203EE37-768B-4BD7-BDCC-5D669BD1412A}.Release|Any CPU.ActiveCfg = ExportRelease|Any CPU
 		{E203EE37-768B-4BD7-BDCC-5D669BD1412A}.Release|Any CPU.Build.0 = ExportRelease|Any CPU
-		{2DC58863-18C6-41FD-9472-0B8C52F68CC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2DC58863-18C6-41FD-9472-0B8C52F68CC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2DC58863-18C6-41FD-9472-0B8C52F68CC5}.ExportDebug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2DC58863-18C6-41FD-9472-0B8C52F68CC5}.ExportDebug|Any CPU.Build.0 = Debug|Any CPU
-		{2DC58863-18C6-41FD-9472-0B8C52F68CC5}.ExportRelease|Any CPU.ActiveCfg = Release|Any CPU
-		{2DC58863-18C6-41FD-9472-0B8C52F68CC5}.ExportRelease|Any CPU.Build.0 = Release|Any CPU
-		{2DC58863-18C6-41FD-9472-0B8C52F68CC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2DC58863-18C6-41FD-9472-0B8C52F68CC5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EEC5AD17-B49A-43DA-AB97-5AE74C87274D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EEC5AD17-B49A-43DA-AB97-5AE74C87274D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EEC5AD17-B49A-43DA-AB97-5AE74C87274D}.ExportDebug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EEC5AD17-B49A-43DA-AB97-5AE74C87274D}.ExportDebug|Any CPU.Build.0 = Debug|Any CPU
-		{EEC5AD17-B49A-43DA-AB97-5AE74C87274D}.ExportRelease|Any CPU.ActiveCfg = Release|Any CPU
-		{EEC5AD17-B49A-43DA-AB97-5AE74C87274D}.ExportRelease|Any CPU.Build.0 = Release|Any CPU
-		{EEC5AD17-B49A-43DA-AB97-5AE74C87274D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EEC5AD17-B49A-43DA-AB97-5AE74C87274D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F2959BB-0B8C-4818-8D63-795EBE95259D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F2959BB-0B8C-4818-8D63-795EBE95259D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F2959BB-0B8C-4818-8D63-795EBE95259D}.ExportDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F2959BB-0B8C-4818-8D63-795EBE95259D}.ExportDebug|Any CPU.Build.0 = Debug|Any CPU
+		{6F2959BB-0B8C-4818-8D63-795EBE95259D}.ExportRelease|Any CPU.ActiveCfg = Release|Any CPU
+		{6F2959BB-0B8C-4818-8D63-795EBE95259D}.ExportRelease|Any CPU.Build.0 = Release|Any CPU
+		{6F2959BB-0B8C-4818-8D63-795EBE95259D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F2959BB-0B8C-4818-8D63-795EBE95259D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{2DC58863-18C6-41FD-9472-0B8C52F68CC5} = {A662E361-2300-4973-9180-B66913A1C494}
-		{EEC5AD17-B49A-43DA-AB97-5AE74C87274D} = {9E88B55D-6E73-4555-A821-789B8778FDA4}
+		{6F2959BB-0B8C-4818-8D63-795EBE95259D} = {9E88B55D-6E73-4555-A821-789B8778FDA4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {66B5DE5C-C3C1-4043-9CB0-F86D28150964}

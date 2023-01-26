@@ -5,6 +5,10 @@
     <RootNamespace>GeneralHostility</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LogicModule\PathfindingModule.csproj" />
+    <Compile Remove="LogicModule\**" />
+    <EmbeddedResource Remove="LogicModule\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="LogicModule\PathfindingModule.csproj" />
   </ItemGroup>
 </Project>
