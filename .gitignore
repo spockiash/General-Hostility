@@ -21,3 +21,10 @@ LogicModule/obj/
 LogicModule/bin/
 obj/
 bin/
+/LogicModule/obj/Debug/net6.0/ref/PathfindingModule.dll
+/LogicModule/obj/Debug/net6.0/refint/PathfindingModule.dll
+/LogicModule/obj/Debug/net6.0/PathfindingModule.csproj.CoreCompileInputs.cache
+/.vs/ProjectEvaluation/general hostility.projects.v5.2
+/.vs/ProjectEvaluation/general hostility.metadata.v5.2
+/.vs/GENERAL HOSTILITY/v17/.futdcache.v2
+/.vs/GENERAL HOSTILITY/v17/TestStore/0/000.testlog
