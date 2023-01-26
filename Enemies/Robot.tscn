@@ -1,13 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://djqax775sffle"]
+[gd_scene load_steps=4 format=3 uid="uid://djqax775sffle"]
 
 [ext_resource type="Texture2D" uid="uid://d1gf0yl5wc7v" path="res://Art/Robot/robot.png" id="1_n6q8d"]
+[ext_resource type="Script" path="res://Enemies/Robot.cs" id="1_xuan8"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mg0iu"]
-radius = 36.0
+radius = 47.0
 height = 146.0
 
 [node name="Robot" type="CharacterBody2D"]
-position = Vector2(0, -35)
+position = Vector2(-1, -18)
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_xuan8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_n6q8d")

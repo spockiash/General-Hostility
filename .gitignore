@@ -17,3 +17,7 @@
 /LogicModule/obj/project.nuget.cache
 /LogicModule/bin/Debug/net6.0/PathfindingModule.pdb
 /LogicModule/bin/Debug/net6.0/PathfindingModule.dll
+LogicModule/obj/
+LogicModule/bin/
+obj/
+bin/
