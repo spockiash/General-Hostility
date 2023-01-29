@@ -31,8 +31,12 @@ public partial class Robot : CharacterBody2D
 
     public override void _PhysicsProcess(double delta)
     {
-        var test = AStar.GetPointUnitPath(VectorHelper.GetVector2I(this.GlobalPosition),
-            VectorHelper.GetVector2I(PlayerInstance.GlobalPosition));
+        var local = PathGrid.ToLocal(this.GlobalPosition);
+        var playerLocal = PathGrid.ToLocal(PlayerInstance.GlobalPosition);
+        var start = PathGrid.LocalToMap(local);
+        var destination = PathGrid.LocalToMap(playerLocal);
+        var test = AStar.GetPointUnitPath(start, destination);
         MoveAndSlide();
 	}
+    
 }

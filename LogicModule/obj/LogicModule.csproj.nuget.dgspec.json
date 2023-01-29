@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bobo\\Documents\\LogicModule\\LogicModule.csproj": {}
+    "C:\\Users\\bobo\\Documents\\GeneralHostility\\LogicModule\\LogicModule.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bobo\\Documents\\LogicModule\\LogicModule.csproj": {
+    "C:\\Users\\bobo\\Documents\\GeneralHostility\\LogicModule\\LogicModule.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bobo\\Documents\\LogicModule\\LogicModule.csproj",
+        "projectUniqueName": "C:\\Users\\bobo\\Documents\\GeneralHostility\\LogicModule\\LogicModule.csproj",
         "projectName": "LogicModule",
-        "projectPath": "C:\\Users\\bobo\\Documents\\LogicModule\\LogicModule.csproj",
+        "projectPath": "C:\\Users\\bobo\\Documents\\GeneralHostility\\LogicModule\\LogicModule.csproj",
         "packagesPath": "C:\\Users\\bobo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bobo\\Documents\\LogicModule\\obj\\",
+        "outputPath": "C:\\Users\\bobo\\Documents\\GeneralHostility\\LogicModule\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Users\\bobo\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
@@ -45,6 +45,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Godot.SourceGenerators": {
+              "target": "Package",
+              "version": "[4.0.0-beta.16, )"
+            },
+            "GodotSharp": {
+              "target": "Package",
+              "version": "[4.0.0-beta.16, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

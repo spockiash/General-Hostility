@@ -14,4 +14,7 @@
     <SourceRoot Include="C:\Users\bobo\AppData\Roaming\Godot\mono\GodotNuGetFallbackFolder\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)godot.sourcegenerators\4.0.0-beta.16\build\Godot.SourceGenerators.props" Condition="Exists('$(NuGetPackageRoot)godot.sourcegenerators\4.0.0-beta.16\build\Godot.SourceGenerators.props')" />
+  </ImportGroup>
 </Project>

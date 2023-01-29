@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "General Hostility", "Genera
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{9E88B55D-6E73-4555-A821-789B8778FDA4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PathfindingModule", "LogicModule\PathfindingModule.csproj", "{6F2959BB-0B8C-4818-8D63-795EBE95259D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogicModule", "LogicModule\LogicModule.csproj", "{6F2959BB-0B8C-4818-8D63-795EBE95259D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpersModule", "..\HelpersModule\HelpersModule.csproj", "{733A28B8-E500-4FF5-8A0E-03559D5A95E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpersModule", "..\HelpersModule\HelpersModule.csproj", "{733A28B8-E500-4FF5-8A0E-03559D5A95E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
