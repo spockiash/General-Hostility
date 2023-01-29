@@ -42,7 +42,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program" : "C:/Godot_v4.0-beta11_mono_win64/Godot_v4.0-beta11_mono_win64.exe",
+            "program" : "C:/Godot_v4.0-beta16_mono_win64/Godot_v4.0-beta16_mono_win64.exe",
             "console": "internalConsole", "stopAtEntry": false
         }
     ]

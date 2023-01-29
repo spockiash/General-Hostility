@@ -181,19 +181,19 @@ public partial class Player : CharacterBody2D
 		var data = (Vector2.Zero, 0f, Vector2.Zero, Vector2.Zero, 0f);
 		if(input_direction == RIGHT)
 		{
-			return (new Vector2(14 + player_position.x, 8 + player_position.y), 90, new Vector2(500, 0), new Vector2(19, 7), 0);
+			return (new Vector2(14 + player_position.X, 8 + player_position.Y), 90, new Vector2(500, 0), new Vector2(19, 7), 0);
 		}
 		if(input_direction == LEFT)
 		{
-			return (new Vector2(-14 + player_position.x, 8 + player_position.y), -90, new Vector2(-500, 0), new Vector2(-19, 7), 135);
+			return (new Vector2(-14 + player_position.X, 8 + player_position.Y), -90, new Vector2(-500, 0), new Vector2(-19, 7), 135);
 		}
 		if(input_direction == UP)
 		{
-			return (new Vector2(player_position.x, -12 + player_position.y), 0, new Vector2(0, -500), new Vector2(0, -17), 55);
+			return (new Vector2(player_position.X, -12 + player_position.Y), 0, new Vector2(0, -500), new Vector2(0, -17), 55);
 		}
 		if(input_direction == DOWN)
 		{
-			return (new Vector2(player_position.x, 20 + player_position.y), 180, new Vector2(0, 500), new Vector2(0, 23), -55);
+			return (new Vector2(player_position.X, 20 + player_position.Y), 180, new Vector2(0, 500), new Vector2(0, 23), -55);
 		}
 		return data;
 	}
@@ -223,8 +223,8 @@ public partial class Player : CharacterBody2D
 
 	public bool IsDiagonal(Vector2 input_direction)
 	{
-		var absolute_x = Math.Abs(input_direction.x);
-		var absolute_y = Math.Abs(input_direction.y);
+		var absolute_x = Math.Abs(input_direction.X);
+		var absolute_y = Math.Abs(input_direction.Y);
 		return absolute_x == absolute_y && input_direction != Vector2.Zero;
 	}
 

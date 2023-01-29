@@ -1,5 +1,5 @@
 ﻿using Godot;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Godot.Collections;
 
 namespace PathfindingModule
 {
@@ -7,13 +7,13 @@ namespace PathfindingModule
     {
         public static AStarSetup CreateInstance(int mapX, int mapY, int unitSize)
         {
-            return new AStarSetup(mapX, mapY, mapY );
+            return new AStarSetup(mapX, mapY, unitSize);
         }
 
         private AStarSetup(int mapDimensionX, int mapDimensionY, int mapUnitSize)
         {
             MapDimensionX = mapDimensionX;
-            MapDimensionY = mapDimensionY;
+            MapDimensionY = mapDimensionX;
             MapUnitSize = mapUnitSize;
             MapHalfUnitSize = mapUnitSize / 2;
             AStarGrid = new AStarGrid2D();
@@ -26,12 +26,12 @@ namespace PathfindingModule
         public AStarGrid2D AStarGrid { get; set; }
         public void Initialize()
         {
-            AStarGrid.Size = new Vector2i(MapDimensionX, MapDimensionY);
+            AStarGrid.Size = new Vector2I(MapDimensionX, MapDimensionY);
             AStarGrid.CellSize = new Vector2(MapUnitSize, MapUnitSize);
             AStarGrid.Update();
         }
 
-        public void SetSolidPoint(Vector2i[] points)
+        public void SetSolidPoint(Array<Vector2I> points)
         {
             foreach (var point in points)
             {
@@ -39,7 +39,7 @@ namespace PathfindingModule
             }
         }
 
-        public Vector2[] GetPointUnitPath(Vector2i start, Vector2i destination)
+        public Vector2[] GetPointUnitPath(Vector2I start, Vector2I destination)
         {
            return AStarGrid.GetPointPath(start, destination);
         }

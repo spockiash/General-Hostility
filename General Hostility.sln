@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{9E88
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PathfindingModule", "LogicModule\PathfindingModule.csproj", "{6F2959BB-0B8C-4818-8D63-795EBE95259D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpersModule", "..\HelpersModule\HelpersModule.csproj", "{733A28B8-E500-4FF5-8A0E-03559D5A95E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,12 +35,21 @@ Global
 		{6F2959BB-0B8C-4818-8D63-795EBE95259D}.ExportRelease|Any CPU.Build.0 = Release|Any CPU
 		{6F2959BB-0B8C-4818-8D63-795EBE95259D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F2959BB-0B8C-4818-8D63-795EBE95259D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{733A28B8-E500-4FF5-8A0E-03559D5A95E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{733A28B8-E500-4FF5-8A0E-03559D5A95E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{733A28B8-E500-4FF5-8A0E-03559D5A95E2}.ExportDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{733A28B8-E500-4FF5-8A0E-03559D5A95E2}.ExportDebug|Any CPU.Build.0 = Debug|Any CPU
+		{733A28B8-E500-4FF5-8A0E-03559D5A95E2}.ExportRelease|Any CPU.ActiveCfg = Release|Any CPU
+		{733A28B8-E500-4FF5-8A0E-03559D5A95E2}.ExportRelease|Any CPU.Build.0 = Release|Any CPU
+		{733A28B8-E500-4FF5-8A0E-03559D5A95E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{733A28B8-E500-4FF5-8A0E-03559D5A95E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6F2959BB-0B8C-4818-8D63-795EBE95259D} = {9E88B55D-6E73-4555-A821-789B8778FDA4}
+		{733A28B8-E500-4FF5-8A0E-03559D5A95E2} = {9E88B55D-6E73-4555-A821-789B8778FDA4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {66B5DE5C-C3C1-4043-9CB0-F86D28150964}
