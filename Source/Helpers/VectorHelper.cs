@@ -11,6 +11,6 @@ namespace GeneralHostility.Helpers
         );
 
         public static Vector2 GetVector2(Vector2I vect) => new(vect.X, vect.Y);
-        public static Vector2I GetVector2I(Vector2 vect) => new((int) Math.Round(vect.X), (int)Math.Round(vect.X));
+        public static Vector2I GetVector2I(Vector2 vect) => new((int) Math.Round(vect.X, MidpointRounding.ToZero), (int)Math.Round(vect.X));
     }
 }
