@@ -9,6 +9,7 @@
     <EmbeddedResource Remove="LogicModule\**" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="LogicModule\LogicModule.csproj" />
     <ProjectReference Include="LogicModule\PathfindingModule.csproj" />
   </ItemGroup>
   <ItemGroup>

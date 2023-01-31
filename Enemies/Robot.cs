@@ -2,7 +2,7 @@ using Godot;
 using System;
 using GeneralHostility.Helpers;
 using Godot.Collections;
-using PathfindingModule;
+using LogicModule;
 
 public partial class Robot : CharacterBody2D
 {

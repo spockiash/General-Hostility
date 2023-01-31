@@ -1,7 +1,7 @@
 ﻿using Godot;
 using Godot.Collections;
 
-namespace PathfindingModule
+namespace LogicModule
 {
     public class AStarSetup
     {

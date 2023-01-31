@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Godot;
 using Godot.Collections;
 
-namespace PathfindingModule
+namespace LogicModule
 {
     public static class GridHelper
     {

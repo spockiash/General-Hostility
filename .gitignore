@@ -28,3 +28,6 @@ bin/
 /.vs/ProjectEvaluation/general hostility.metadata.v5.2
 /.vs/GENERAL HOSTILITY/v17/.futdcache.v2
 /.vs/GENERAL HOSTILITY/v17/TestStore/0/000.testlog
+/LogicModule/obj/Debug/net6.0/LogicModule.GeneratedMSBuildEditorConfig.editorconfig
+/LogicModule/obj/Debug/net6.0/LogicModule.csproj.AssemblyReference.cache
+/LogicModule/obj/Debug/net6.0/LogicModule.assets.cache
