@@ -3,10 +3,13 @@ using System;
 using GeneralHostility.Helpers;
 using Godot.Collections;
 using LogicModule;
+using LogicModule.Helpers;
 
 public partial class Robot : CharacterBody2D
 {
-	public const float Speed = 300.0f;
+    private int _pathIndex = 0;
+    public const float Speed = 300.0f;
+    public const int move_speed = 30;
     public const int UnitSize = 16;
     public TileMap PathGrid { get; set; }
     public (Array<Vector2I> walkable, Array<Vector2I> blocked, Vector2I offset) PathfinderCells { get; set; }
@@ -25,18 +28,43 @@ public partial class Robot : CharacterBody2D
         AStar = AStarSetup.CreateInstance(GridSize.X + 1, GridSize.Y + 1, UnitSize);
         AStar.Initialize();
         AStar.SetSolidPoint(PathfinderCells.blocked);
+        PathCoordinates = SetDefaultPathway();
     }
 
-    
+    public Vector2[] PathCoordinates { get; set; }
+
 
     public override void _PhysicsProcess(double delta)
+    {
+        var currentCoordinate = PathCoordinates[_pathIndex];
+        if (Math.Abs(currentCoordinate.X - this.GlobalPosition.X) < 5)
+        {
+            currentCoordinate.X = 0;
+        }
+        if (Math.Abs(currentCoordinate.Y - this.GlobalPosition.Y) < 5)
+        {
+            currentCoordinate.Y = 0;
+        }
+
+        var direction = VCalculationsHelper.RawVectorToInput(currentCoordinate);
+
+        if (direction == Vector2.Zero && PathCoordinates.Length > _pathIndex)
+        {
+            _pathIndex++;
+        }
+
+        Velocity = direction * move_speed;
+        MoveAndSlide();
+    }
+
+
+
+    private Vector2[] SetDefaultPathway()
     {
         var local = PathGrid.ToLocal(this.GlobalPosition);
         var playerLocal = PathGrid.ToLocal(PlayerInstance.GlobalPosition);
         var start = PathGrid.LocalToMap(local);
         var destination = PathGrid.LocalToMap(playerLocal);
-        var test = AStar.GetPointUnitPath(start, destination);
-        MoveAndSlide();
-	}
-    
+        return AStar.GetPointUnitPath(start, destination);
+    }
 }
